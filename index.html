@@ -1,0 +1,514 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lighthouse</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/light-black.png" />
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            background-color: #FFF;
+            width: 100%;
+        }
+
+        .header-description {
+            font-size: 20px !important;
+            color: #716f6f;
+        }
+
+        .header-text {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .section-description {
+            font-size: 15px;
+            color: #716f6f;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .section-header {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-color: #FFF;
+            border-radius: 0px !important;
+            margin-top: 0px;
+        }
+
+        .header-container {
+            color: #151515;
+            margin-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 0px !important;
+        }
+
+        .search-input {
+            width: auto;
+            margin-left: 15px;
+        }
+
+        .navbar-desktop {
+            display: none;
+        }
+
+        .navbar-collapse {
+            margin-top: 55px;
+        }
+
+        .navbar {
+            background-color: #24292E;
+            margin-bottom: 0px;
+            border-radius: 0px;
+            border: none;
+            width: 100%;
+        }
+
+        .navbar ul > li {
+            color: #FFF;
+        }
+
+        .navbar-icon-mobile {
+            height: 30px;
+            width: 30px;
+        }
+
+        .navbar-icon {
+            margin-top: 10px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            color: #FFF;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover {
+            color:  #a6acaf;
+        }
+
+        .navbar-brand {
+            color: #FFF !important;
+        }
+
+        .custom-input {
+            border: none;
+        }
+
+        .navbar-content-mobile {
+            padding: 10px 20px 10px 20px;
+        }
+
+        .navbar-content {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar-mobile-item {
+            border-top: 2px solid #3A3F43;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .how-it-works-desc {
+            font-size: 14px;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .how-it-works-container {
+            background-color: #24292E;
+            color: #FFF;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .how-item {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .header-img {
+            width: 100%;
+        }
+
+        .track-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .track-text, .subscribe-text {
+            padding-bottom: 70px;
+        }
+
+        .track-text {
+            text-align: center;
+        }
+
+        .subscribe-container {
+            background-color: #24292E;
+            color: #FFF;
+        }
+
+        .subscribe-text {
+            margin-top: 50px;
+        }
+
+        .custom-form {
+            margin-top: 30px;
+            padding-right: 30px;
+        }
+
+        .custom-input {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .custom-nav-input {
+            width: auto;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .footer-list {
+            list-style-type: none;
+        }
+
+        .footer-container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .list-heaader {
+            font-weight: 700;
+        }
+
+        .list-item {
+            font-weight: 300;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #151515;
+        }
+
+        .footer-link:hover {
+            text-decoration: none;
+        }
+
+        .burger-menu {
+            border: none;
+        }
+
+        .burger-menu:hover {
+            background-color: #24292E !important;
+        }
+
+        .how-label {
+            font-weight: 700 !important;
+        }
+
+        .footer-img {
+            height: 50px;
+            width: 50px;
+        }
+
+        @media(min-width: 768px) {
+
+            .navbar-mobile {
+                display: none;
+            }
+
+            .navbar-desktop {
+                display: block;
+            }
+
+            .header-text {
+                text-align: left;
+                padding-top: 70px;
+            }
+
+            .topmargin {
+                margin-top: 50px;
+            }
+
+            .bottommargin {
+                margin-bottom: 50px;
+            }
+
+            .track-container, .manage-container {
+                margin-top: 70px;
+                margin-bottom: 70px;
+            }
+
+            .section-header {
+                font-size: 36px;
+                text-align: left;
+            }
+
+            .section-description {
+                font-size: 18px;
+                text-align: left;
+            }
+
+            .custom-btn {
+                width: auto;
+            }
+
+            .track-text {
+                margin: 0px;
+            }
+
+            .custom-input {
+                width: auto;
+            }
+
+        }
+
+        @media(min-width: 992px) {
+
+            .how-item {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .navbar-content {
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+
+        }
+
+        @media(min-width: 1200px) {
+
+            .header-text {
+                margin-top: 50px;
+                padding-bottom: 70px;
+            }
+
+            .header-container {
+                padding-bottom: 40px;
+            }
+
+            .track-text {
+                padding-top: 70px;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-desktop">
+        <div class="container-fluid navbar-content">
+            <ul class="nav navbar-nav">
+                <li><img src="img/light.png" class="navbar-icon" /></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                      <input type="text" class="form-control custom-nav-input" placeholder="Search Lighthouse">
+                    </div>
+                </form>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#"> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-inverse navbar-mobile">
+        <div class="container-fluid navbar-content-mobile">
+            <div class="row">
+              <div class="pull-left" style="margin-left: 30px;">
+                  <ul class="nav navbar-nav">
+                      <li><img src="img/light.png" class="navbar-icon-mobile" /></li>
+                  </ul>
+              </div>
+              <div class="navbar-header pull-right">
+                  <button type="button" class="navbar-toggle burger-menu" data-toggle="collapse" data-target="#mobile-navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse" id="mobile-navbar">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#">Home</a></li>
+                      <li class="navbar-mobile-item"><a href="#">About</a></li>
+                      <li class="navbar-mobile-item"><a href="#">Explore</a></li>
+                      <li class="navbar-mobile-item"><a href="#">Shop</a></li>
+                      <li class="navbar-mobile-item"><input type="text" class="form-control custom--nav-input search-input" placeholder="Search Lighthouse"></li>
+                      <li class="navbar-mobile-item"><a href="#">Sign Up</a></li>
+                      <li class="navbar-mobile-item"><a href="#"> Login</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid header-container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/Lighthouse-Header.png" class="header-img" />
+                </div>
+                <div class="col-md-6 bottommargin">
+                    <div class="header-text">
+                        <h1><b>Lighthouse</b></h1>
+                        <h2>Built for developers</h2>
+                        <p class="header-description">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid how-it-works-container">
+        <div class="row">
+            <div class="col-md-4 text-center how-item">
+                <img src="img/light2.png" class="img-circle" />
+                <h3 class="how-label">Guide</h3>
+                <p class="how-it-works-desc text-center">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.</p>
+            </div>
+            <div class="col-md-4 text-center how-item">
+                <img src="img/compass.png" class="img-circle" />
+                <h3 class="how-label">Navigate</h3>
+                <p class="how-it-works-desc text-cente">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.</p>
+            </div>
+            <div class="col-md-4 text-center how-item">
+                <img src="img/excursion.png" class="img-circle" />
+                <h3 class="how-label">Track</h3>
+                <p class="how-it-works-desc text-center">Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container track-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="track-text">
+                    <h1 class="section-header">About Lighthouse</h1>
+                    <p class="section-description text-left">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                    <button type="button" class="btn btn-danger btn-lg custom-btn btn-block">Read more</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="img/sea-pack.png"  class="header-img"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid subscribe-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="subscribe-text">
+                    <h1 class="text-center">Subscribe to our news letter!</h1>
+                    <form class="form-inline text-center">
+                        <div class="form-group custom-form">
+                            <input type="firstname" class="form-control input-lg custom-input" id="firstname" placeholder="First Name">
+                            <input type="lastname" class="form-control input-lg custom-input" id="lastname" placeholder="Last Name">
+                            <input type="email" class="form-control input-lg custom-input" id="email" placeholder="Email Address">
+                            <button type="submit" class="btn btn-danger btn-lg custom-input">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id ="footer">
+        <div class="container-fluid footer-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-text">
+                        <ul class="footer-list">
+                            <li><img src="img/light-black.png" class="footer-img"/></li>
+                            <li><h2><strong>Lighthouse</strong></h2></li>
+                            <li><h4>© 2018</h4></li>
+                            <li><h5>This site is a work of fiction</h5></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-text">
+                        <ul class="footer-list">
+                            <br>
+                            <li class="list-header"><b>About<b></li>
+                            <li class="list-item"><a href="#" class="footer-link">Lorem</a></li>
+                            <li class="list-item"><a href="#" class="footer-link">Ipsum</a></li>
+                            <li class="list-item"><a href="#" class="footer-link">Lighthouse</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-text">
+                      <ul class="footer-list">
+                          <br>
+                          <li class="list-header"><b>Explore<b></li>
+                          <li class="list-item"><a href="#" class="footer-link">Lorem</a></li>
+                          <li class="list-item"><a href="#" class="footer-link">Ipsum</a></li>
+                          <li class="list-item"><a href="#" class="footer-link">Lighthouse</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-text">
+                      <ul class="footer-list">
+                          <br>
+                          <li class="list-header"><b>Shop<b></li>
+                          <li class="list-item"><a href="#" class="footer-link">Lorem</a></li>
+                          <li class="list-item"><a href="#" class="footer-link">Ipsum</a></li>
+                          <li class="list-item"><a href="#" class="footer-link">Lighthouse</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

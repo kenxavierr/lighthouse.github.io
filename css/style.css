@@ -1,0 +1,33 @@
+body
+{
+  background-color: #111111;
+  color:white;
+}
+
+.navbar
+{
+  background:transparent;
+  border: 0;
+  position:absolute;
+}
+
+.carousel-indicators li
+{
+  visibility: hidden;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover
+{
+  color: white;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus
+{
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu
+{
+    display: block;
+}
